@@ -18,6 +18,7 @@
 - Breadth-First Search (BFS)
 - Managing requests in order
 - Buffering data streams
+> When stuck, ask: “Is this a shortest-path problem or an exploration problem?” That alone solves 80% of confusion.
 
 ---
 
