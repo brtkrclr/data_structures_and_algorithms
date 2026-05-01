@@ -16,12 +16,17 @@ This repository contains well-documented implementations of fundamental data str
 ```
 data_structures_and_algorithms/
 ├── arrays/              # Array manipulation patterns
-├── linked_lists/        # Linked list operations
-├── stacks/              # Stack-based algorithms
-├── queues/              # Queue and BFS patterns
+├── binary_search/       # Binary search techniques
+├── dynamic_programming/ # DP, memoization, tabulation
+├── graphs/              # Graph traversals and paths
 ├── hash_tables/         # Hash map techniques
+├── heaps/               # Heap and priority queue patterns
+├── linked_lists/        # Linked list operations
+├── queues/              # Queue and BFS patterns
+├── sorting/             # Sorting algorithms
+├── stacks/              # Stack-based algorithms
 ├── trees/               # Tree traversals and operations
-└── heaps/               # Heap and priority queue patterns
+└── tries/               # Prefix tree patterns
 ```
 
 Each directory contains:
@@ -43,12 +48,17 @@ cd data_structures_and_algorithms
 
 # Run any data structure examples
 python3 arrays/arrays.py
-python3 linked_lists/linked_lists.py
-python3 stacks/stacks.py
-python3 queues/queues.py
+python3 binary_search/binary_search.py
+python3 dynamic_programming/dynamic_programming.py
+python3 graphs/graphs.py
 python3 hash_tables/hash_tables.py
-python3 trees/trees.py
 python3 heaps/heaps.py
+python3 linked_lists/linked_lists.py
+python3 queues/queues.py
+python3 sorting/sorting.py
+python3 stacks/stacks.py
+python3 trees/trees.py
+python3 tries/tries.py
 ```
 
 ### Using in Your Code
@@ -57,12 +67,17 @@ Import any pattern directly:
 
 ```python
 from arrays.arrays import two_sum_sorted, max_subarray_sum_k
-from linked_lists.linked_lists import reverse_list, has_cycle
-from stacks.stacks import is_valid_parentheses, next_greater_element
-from queues.queues import bfs_graph, level_order_traversal
+from binary_search.binary_search import binary_search, find_first_occurrence
+from dynamic_programming.dynamic_programming import climb_stairs, knapsack
+from graphs.graphs import bfs_traversal, dfs_traversal
 from hash_tables.hash_tables import two_sum, group_anagrams
-from trees.trees import inorder_traversal, max_depth
 from heaps.heaps import find_kth_largest, merge_k_sorted_lists
+from linked_lists.linked_lists import reverse_list, has_cycle
+from queues.queues import bfs_graph, level_order_traversal
+from sorting.sorting import merge_sort, quick_sort
+from stacks.stacks import is_valid_parentheses, next_greater_element
+from trees.trees import inorder_traversal, max_depth
+from tries.tries import Trie
 ```
 
 ## 📖 Data Structures
@@ -156,6 +171,69 @@ from heaps.heaps import find_kth_largest, merge_k_sorted_lists
 
 [View Documentation →](heaps/README.md)
 
+---
+
+### 8. Graphs
+**Key Patterns**: BFS, DFS, Topological Sort, Shortest Path
+
+**Common Problems**:
+- Number of Islands
+- Course Schedule
+- Clone Graph
+- Word Ladder
+
+[View Documentation →](graphs/README.md)
+
+---
+
+### 9. Binary Search
+**Key Patterns**: Binary Search, Lower/Upper Bound, Search in Rotated Array
+
+**Common Problems**:
+- Binary Search
+- First Bad Version
+- Find Minimum in Rotated Sorted Array
+- Search a 2D Matrix
+
+[View Documentation →](binary_search/README.md)
+
+---
+
+### 10. Dynamic Programming
+**Key Patterns**: Memoization, Tabulation, 0/1 Knapsack, Unbounded Knapsack
+
+**Common Problems**:
+- Climbing Stairs
+- Coin Change
+- Longest Increasing Subsequence
+- Partition Equal Subset Sum
+
+[View Documentation →](dynamic_programming/README.md)
+
+---
+
+### 11. Tries
+**Key Patterns**: Prefix Tree Construction, Word Search II
+
+**Common Problems**:
+- Implement Trie (Prefix Tree)
+- Design Add and Search Words Data Structure
+- Word Search II
+
+[View Documentation →](tries/README.md)
+
+---
+
+### 12. Sorting
+**Key Patterns**: Merge Sort, Quick Sort, Intervals
+
+**Common Problems**:
+- Merge Intervals
+- Kth Largest Element in an Array (Quickselect)
+- Sort Colors
+
+[View Documentation →](sorting/README.md)
+
 ## 🧪 Testing
 
 All implementations include test cases in the `if __name__ == "__main__":` block. Run individual files to see examples in action:
@@ -193,12 +271,16 @@ Quick reference for common operations:
 
 Recommended order for studying:
 
-1. **Arrays** - Foundation for all data structures
-2. **Linked Lists** - Pointer manipulation basics
-3. **Stacks & Queues** - LIFO and FIFO patterns
-4. **Hash Tables** - Fast lookups and counting
-5. **Trees** - Hierarchical data and recursion
-6. **Heaps** - Priority queues and top K problems
+1. **Arrays & Strings** - Foundation for all data structures
+2. **Binary Search** - Essential optimization technique
+3. **Sorting** - Core algorithmic foundations
+4. **Linked Lists** - Pointer manipulation basics
+5. **Stacks & Queues** - LIFO and FIFO patterns
+6. **Hash Tables** - Fast lookups and counting
+7. **Trees & Tries** - Hierarchical data and recursion
+8. **Heaps** - Priority queues and top K problems
+9. **Graphs** - Complex relationships and traversals
+10. **Dynamic Programming** - Advanced problem solving
 
 ## 💡 Tips for Interview Prep
 
